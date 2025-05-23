@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+        font-size: 1.5em;
+    }
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 15px;
+      background-color: black;
+      width: 95%;
+      margin: auto;
+      text-align: center;
+      align-items: center;
+      
+    }
+
+    ul.main > li {
+      display: inline-block;
+      position: relative;
+      padding: 20px 25px;
+      margin: auto;
+    }
+
+    ul.main > li > a {
+      color: white;
+      text-decoration: none;
+      margin-right: 20px;
+    }
+
+    /* Dropdown hidden initially */
+    ul.main li ul {
+      display: none;
+      position: absolute;
+      background-color: #d18352;
+      min-width: 100px;
+      top: 100%;
+      left: 0;
+      z-index: 1;
+    }
+
+    /* Show dropdown on hover */
+    ul.main li:hover ul {
+      display: block;
+    }
+
+    ul.main li ul li {
+      display: block;
+      padding: 10px;
+    }
+
+    ul.main li ul li a {
+      color: black;
+      text-decoration: none;
+    }
+    body{
+        background-color: #f58383;
+        
+    }
+
+    /* ul.main li ul li a:hover {
+      background-color: #fffdfd;
+      
+    } */
+  </style>
+</head>
+<body style="background: #c94b4b; background: -webkit-linear-gradient(to right, #4b134f, #c94b4b);  
+background: linear-gradient(to right, #9e3da5, #c94b4b);">
+  <center><u><h3 style="margin-top: 20px;">Admission Portal</h3></u></center>
+  <ul class="main">
+    
+    <li><a href="">Course Master <span class="arrow">▼</span> </a>
+      <ul>
+        <li><a href='/addcourse'>Add Course</a></li>
+        <li><a href='/viewcourse'>View Course</a></li>
+      </ul>
+    </li>
+    <li><a href=''>Student Master <span class="arrow">▼</span></a>
+      <ul>
+        <li><a href='/addstudent'>Add Student</a></li>
+        <li><a href='/viewstudent'>View Student</a></li>
+      </ul>
+    </li>
+    <li><a href="">Reports <span class="arrow">▼</span></a>
+      <ul>
+        <li><a href="/coursewisestudent">Course wise student</a></li>
+        <li><a href="/studentcount">Student count</a></li>
+      </ul>
+    </li>
+  </ul>
+</body>
+</html>
